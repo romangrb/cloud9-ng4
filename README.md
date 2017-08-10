@@ -26,3 +26,47 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
+    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
+    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
+    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
+     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
+    ----------------------------------------------------------------- 
+
+
+Hi there! Welcome to Cloud9 IDE!
+
+To get you started, create some files, play with the terminal,
+or visit http://docs.c9.io for our documentation.
+If you want, you can also go watch some training videos at
+http://www.youtube.com/user/c9ide.
+
+
+The Cloud9 IDE team
+
+Angular4 quick setup
+
+1. Find the hosts in the etc/ folder and edit
+
+    add the line bellow all ip addresses "0.0.0.0 yourworkspace-yourusername.c9users.io" (without quotes of course)
+
+2. Install the Angular CLI globally.
+    
+    npm install -g @angular/cli 
+
+    (Verify that you are running at least node 6.9.x and npm 3.x.x by running node -v 
+    and npm -v in a terminal/console window. Older versions produce errors, but newer versions are fine.)
+
+3. Install all required dependencies.
+    
+    npm install
+
+4. In package.json change the line
+    
+    "start": "ng serve -H yourworkspace-yourusername.c9users.io"
+
+5. Go to the application folder and start the app in the terminal with 
+    
+    npm start
