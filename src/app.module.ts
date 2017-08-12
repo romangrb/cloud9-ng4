@@ -2,10 +2,10 @@ import { BrowserModule }         from '@angular/platform-browser';
 import { NgModule }              from '@angular/core';
 import { RouterModule, Routes }  from '@angular/router';
 
-import { AppComponent }          from './app/component/app';
+import { AppComponent }          from './app/components/app';
 import { PageAComponent }        from './algorithm/components/a';
-import { PageBComponent }        from './algorithm/components/b;
-import { PageNotFoundComponent } from './app/component/not-found';
+import { PageBComponent }        from './algorithm/components/b';
+import { PageNotFoundComponent } from './app/components/not-found';
 
 
 const appRoutes: Routes = [
