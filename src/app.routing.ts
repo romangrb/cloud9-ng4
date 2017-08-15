@@ -4,8 +4,8 @@ import { HomeComponent }         from './home/index';
 import { LoginComponent }        from './login/index';
 import { RegisterComponent }     from './register/index';
 import { AuthGuard }             from './_guards/index';
-import { PageAComponent }        from './algorithm/components/a';
-import { PageBComponent }        from './algorithm/components/b';
+import { BubleComponent }        from './algorithm/buble/components/index';
+import { InsertionComponent }    from './algorithm/insertion/components/index'
 import { PageNotFoundComponent } from './algorithm/components/not-found';
 
 const appRoutes: Routes = [
@@ -13,8 +13,8 @@ const appRoutes: Routes = [
     { path: 'login',     component: LoginComponent },
     { path: 'register',  component: RegisterComponent },
 
-    { path: 'page-a',    component: PageAComponent },
-    { path: 'page-b',    component: PageBComponent },
+    { path: 'sort-buble',        component: BubleComponent },
+    { path: 'sort-insertion',    component: InsertionComponent },
     
     { path: '**',        component: PageNotFoundComponent }
 

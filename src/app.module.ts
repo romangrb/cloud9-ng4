@@ -11,8 +11,8 @@ import {NgbModule}               from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent }          from './app/components/index';
 import { routing }               from './app.routing';
 
-import { PageAComponent }        from './algorithm/components/a';
-import { PageBComponent }        from './algorithm/components/b';
+import { BubleComponent }        from './algorithm/buble/components/index';
+import { InsertionComponent }    from './algorithm/insertion/components/index'
 import { PageNotFoundComponent } from './algorithm/components/not-found';
 
 import { fakeBackendProvider }   from './_helpers/index';
@@ -35,8 +35,8 @@ import { RegisterComponent }     from './register/components/register';
     HomeComponent,
     RegisterComponent,
     LoginComponent,
-    PageAComponent,
-    PageBComponent,
+    BubleComponent,
+    InsertionComponent,
     PageNotFoundComponent
   ],
   imports: [
