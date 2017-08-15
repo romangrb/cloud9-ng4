@@ -6,26 +6,25 @@ import { FormsModule }           from '@angular/forms';
 import { MockBackend, 
          MockConnection }        from '@angular/http/testing';
 
-import { AppComponent }          from './app/components/app';
+import { AppComponent }          from './app/components/index';
 import { routing }               from './app.routing';
 
 import { PageAComponent }        from './algorithm/components/a';
 import { PageBComponent }        from './algorithm/components/b';
-import { PageNotFoundComponent } from './app/components/not-found';
+import { PageNotFoundComponent } from './algorithm/components/not-found';
 
 import { fakeBackendProvider }   from './_helpers/index';
 import { BaseRequestOptions }    from '@angular/http';
 
-import { AlertComponent }        from './alert/directives/alert';
+import { AlertComponent }        from './alert/directives/index';
 import { AuthGuard }             from './_guards/index';
 import { AlertService }          from './alert/services/index';
+import { UserService }           from './user/services/index';
 import { AuthenticationService } from './authentication/index';
-import { UserService }           from './user/services/user';
 
 import { HomeComponent }         from './home/index';
 import { LoginComponent }        from './login/index';
 import { RegisterComponent }     from './register/components/register';
-
 
 @NgModule({
   declarations: [
@@ -49,7 +48,6 @@ import { RegisterComponent }     from './register/components/register';
     AlertService,
     AuthenticationService,
     UserService,
-    // providers used to create fake backend
     fakeBackendProvider,
     MockBackend,
     BaseRequestOptions

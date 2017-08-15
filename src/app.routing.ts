@@ -6,17 +6,17 @@ import { RegisterComponent }     from './register/index';
 import { AuthGuard }             from './_guards/index';
 import { PageAComponent }        from './algorithm/components/a';
 import { PageBComponent }        from './algorithm/components/b';
-import { PageNotFoundComponent } from './app/components/not-found';
+import { PageNotFoundComponent } from './algorithm/components/not-found';
 
 const appRoutes: Routes = [
-    { path: '', component: HomeComponent, canActivate: [AuthGuard] },
-    { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent },
+    { path: '',          component: HomeComponent, canActivate: [AuthGuard] },
+    { path: 'login',     component: LoginComponent },
+    { path: 'register',  component: RegisterComponent },
 
-    { path: 'page-a', component: PageAComponent },
-    { path: 'page-b', component: PageBComponent },
+    { path: 'page-a',    component: PageAComponent },
+    { path: 'page-b',    component: PageBComponent },
     
-    { path: '**', component: PageNotFoundComponent }
+    { path: '**',        component: PageNotFoundComponent }
 
 ];
 

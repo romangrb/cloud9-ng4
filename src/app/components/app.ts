@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Algorithm tytorial';
 }
