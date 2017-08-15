@@ -5,6 +5,8 @@ import { HttpModule }            from '@angular/http';
 import { FormsModule }           from '@angular/forms';
 import { MockBackend, 
          MockConnection }        from '@angular/http/testing';
+         
+import {NgbModule}               from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent }          from './app/components/index';
 import { routing }               from './app.routing';
@@ -41,7 +43,8 @@ import { RegisterComponent }     from './register/components/register';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    NgbModule.forRoot()
   ],
   providers: [
     AuthGuard,

@@ -7,8 +7,17 @@
   </div>
 </div>
 <nav>
-  <a routerLink="/page-a" routerLinkActive="active">PageA</a>
-  <a routerLink="/page-b" routerLinkActive="active">PageB</a>
+  <div class="row">
+    <div class="col">
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="methods" ngbDropdownToggle>Toggle dropdown</button>
+        <div ngbDropdownMenu aria-labelledby="methods">
+          <button routerLink="/page-a" class="dropdown-item">PageA</button>
+          <button routerLink="/page-b" class="dropdown-item">PageB</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </nav>
 <router-outlet></router-outlet>
 
